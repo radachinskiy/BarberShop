@@ -1,17 +1,15 @@
+
+<%= @results %>
+
 <table class="table">
-
-	<tr>
-		<td>aa</td>
-		<td>bb</td>
-	</tr>
-
-<tr>
-		<td>aa</td>
-		<td>bb</td>
-	</tr>
-<tr>
-		<td>aa</td>
-		<td>bb</td>
-	</tr>
+	<% @results.each do |row| %>
+		<tr>
+			<td><%= row[1] %></td>
+			<td><%= row[2] %></td>
+			<td><%= row[3] %></td>
+			<td><%= row[4] %></td>
+			<td><%= row[5] %></td>
+		</tr>
+	<% end %>
 
 </table>
