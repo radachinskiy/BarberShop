@@ -1,7 +1,15 @@
-
-<%= @results %>
-
 <table class="table">
+	<thead>
+		<tr>
+			<th>Имя</th>
+			<th>Телефон</th>
+			<th>дата записи</th>
+			<th>Парикмахер</th>
+			<th>Цвет</th>
+		</tr>
+	</thead>
+
+	<body>
 	<% @results.each do |row| %>
 		<tr>
 			<td><%= row[1] %></td>
@@ -11,5 +19,6 @@
 			<td><%= row[5] %></td>
 		</tr>
 	<% end %>
+	</body>
 
 </table>
